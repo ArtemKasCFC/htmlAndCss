@@ -6,12 +6,58 @@
 .container {
   width: 825px;
   margin: 100px auto;
+  position: relative;
+  font-family: sans-serif;
+}
+
+.container::before {
+  content: "Sale";
+  text-transform: uppercase;
+  background-color: orangered;
+  position: absolute;
+  top: -15px;
+  left: -40px;
+  padding: 7px 15px;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 0.25em;
 }
 
 .product {
   border: 5px solid black;
-  font-family: sans-serif;
   line-height: 1.4;
+}
+
+.colors > * {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  margin-top: 35px;
+  margin-right: 10px;
+}
+
+.black {
+  background-color: black;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.green {
+  background-color: green;
+}
+
+.brown {
+  background-color: brown;
 }
 
 h2,
