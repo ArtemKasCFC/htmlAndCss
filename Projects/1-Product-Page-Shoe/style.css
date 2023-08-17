@@ -78,7 +78,7 @@ p {
 .price {
   font-size: 30px;
   margin: 0;
-  float: left;
+  /* float: left; */
 }
 
 .shipping {
@@ -87,7 +87,7 @@ p {
   text-transform: uppercase;
   font-size: 14px;
   margin-top: 8px;
-  float: right;
+  /* float: right; */
 }
 
 .more-info:link,
@@ -130,6 +130,8 @@ p {
   margin-bottom: 10px;
 }
 
+/* FLOATS 
+
 .image {
   float: left;
 }
@@ -150,4 +152,24 @@ p {
   margin-top: 20px;
   clear: both;
   display: inline-block;
+} */
+
+.row {
+  display: flex;
+  gap: 40px;
+  align-content: flex-start;
+}
+
+.price-shipping {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.product-info {
+  flex: 1;
+}
+
+.product-details {
+  flex: 1;
 }
