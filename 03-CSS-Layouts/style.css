@@ -27,7 +27,7 @@ body {
   padding-left: 40px;
   padding-right: 40px; */
   padding: 20px 40px;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
   /* height: 80px; */
 }
 
@@ -37,7 +37,7 @@ nav {
 }
 
 article {
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
 }
 
 .post-header {
@@ -52,7 +52,7 @@ aside {
   /* padding-top: 50px;
   padding-bottom: 50px; */
   padding: 50px 0;
-  width: 500px;
+  /* width: 500px; */
 }
 
 /* SMALLER ELEMENTS */
@@ -331,6 +331,7 @@ footer {
   align-items: center;
 }
 
+/* FLEX 
 .row {
   display: flex;
   gap: 75px;
@@ -345,4 +346,26 @@ article {
 
 aside {
   flex: 0 0 300px;
+} */
+
+/* GRID */
+
+.container {
+  display: grid;
+  grid-template-columns: auto 300px;
+  /* grid-template-rows: repeat(3, 1fr); */
+  column-gap: 75px;
+  row-gap: 60px;
+}
+
+.main-header {
+  grid-column: 1 / -1;
+}
+
+aside {
+  align-self: start;
+}
+
+footer {
+  grid-column: 1 / -1;
 }
